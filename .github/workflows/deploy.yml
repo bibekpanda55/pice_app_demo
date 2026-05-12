@@ -28,12 +28,21 @@ jobs:
           channel: stable
           cache: true
 
+      - name: Print Flutter version (debug)
+        run: flutter --version
+
+      - name: Ensure web platform is present
+        # Idempotent: regenerates only the missing web/ folder; doesn't touch
+        # lib/, pubspec.yaml, android/, or ios/. Needed because the repo was
+        # bootstrapped with --platforms=android,ios so `web/` doesn't exist yet.
+        run: flutter create --platforms=web --org com.example .
+
       - name: Install dependencies
         run: flutter pub get
 
       - name: Build web
-        # --base-href MUST match the repo name (with leading and trailing slashes)
-        # so Flutter's asset paths resolve correctly under the project subpath.
+        # --base-href MUST match the repo name (with leading and trailing
+        # slashes) so Flutter's asset paths resolve under the project subpath.
         run: flutter build web --release --base-href "/pice_app_demo/"
 
       - name: Upload artifact
