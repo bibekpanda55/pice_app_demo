@@ -1,6 +1,6 @@
 # pice_demo
 
-A Flutter prototype for Android and iOS that explores three feature additions to **[Pice](https://piceapp.com)** — India's B2B payments app for GST-registered businesses. Theme and design language lifted from the live app; data, navigation, and state are local mocks.
+**[▶ Live web demo](https://bibekpanda55.github.io/pice_app_demo/)** · A Flutter prototype for Android and iOS that explores three feature additions to **[Pice](https://piceapp.com)** — India's B2B payments app for GST-registered businesses. Theme and design language lifted from the live app; data, navigation, and state are local mocks.
 
 <p align="center">
   <img src="docs/02-health-healthy.png" width="240" alt="Supplier Health: Looks healthy"/>
