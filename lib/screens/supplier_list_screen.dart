@@ -147,8 +147,10 @@ class _BuiltByFooter extends StatelessWidget {
   static const _github = 'https://github.com/bibekpanda55/';
   static const _proposalPdf =
       'https://drive.google.com/file/d/1UH_Yeoi4SQh8AYO4pzlhYJuP-pTcX7BO/view?usp=sharing';
-  static const _demoVideo =
+  static const _demoVideoPart1 =
       'https://www.loom.com/share/651756d86d8c4ac7851e3c545f3eef89';
+  static const _demoVideoPart2 =
+      'https://www.loom.com/share/113f0058c0f34371bf8543a68c0ad55f';
 
   @override
   Widget build(BuildContext context) {
@@ -213,8 +215,13 @@ class _BuiltByFooter extends StatelessWidget {
                 ),
                 _LinkChip(
                   icon: Icons.play_circle_outline_rounded,
-                  label: 'Demo video',
-                  url: _demoVideo,
+                  label: 'Demo · pt 1',
+                  url: _demoVideoPart1,
+                ),
+                _LinkChip(
+                  icon: Icons.play_circle_outline_rounded,
+                  label: 'Demo · pt 2',
+                  url: _demoVideoPart2,
                 ),
               ],
             ),
