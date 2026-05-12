@@ -145,12 +145,16 @@ class _BuiltByFooter extends StatelessWidget {
   static const _linkedIn =
       'https://www.linkedin.com/in/bibek-panda-a8ba66174/';
   static const _github = 'https://github.com/bibekpanda55/';
+  static const _resume =
+      'https://drive.google.com/file/d/1dW6BQ-PvCPLQE8MNUN5AbWdqr3rLpgyP/view?usp=sharing';
   static const _proposalPdf =
       'https://drive.google.com/file/d/1UH_Yeoi4SQh8AYO4pzlhYJuP-pTcX7BO/view?usp=sharing';
   static const _demoVideoPart1 =
       'https://www.loom.com/share/651756d86d8c4ac7851e3c545f3eef89';
   static const _demoVideoPart2 =
       'https://www.loom.com/share/113f0058c0f34371bf8543a68c0ad55f';
+  static const _androidApk =
+      'https://drive.google.com/file/d/15QFWgCYWSOYQYWpCnizXSAzIlAiePZkS/view?usp=sharing';
 
   @override
   Widget build(BuildContext context) {
@@ -209,6 +213,11 @@ class _BuiltByFooter extends StatelessWidget {
                   url: _github,
                 ),
                 _LinkChip(
+                  icon: Icons.article_rounded,
+                  label: 'Resume',
+                  url: _resume,
+                ),
+                _LinkChip(
                   icon: Icons.picture_as_pdf_rounded,
                   label: 'Proposal PDF',
                   url: _proposalPdf,
@@ -222,6 +231,11 @@ class _BuiltByFooter extends StatelessWidget {
                   icon: Icons.play_circle_outline_rounded,
                   label: 'Demo · pt 2',
                   url: _demoVideoPart2,
+                ),
+                _LinkChip(
+                  icon: Icons.android_rounded,
+                  label: 'Android APK',
+                  url: _androidApk,
                 ),
               ],
             ),
