@@ -142,9 +142,8 @@ class _InvoicesIconButton extends StatelessWidget {
 class _BuiltByFooter extends StatelessWidget {
   const _BuiltByFooter();
 
-  static const _linkedIn =
-      'https://www.linkedin.com/in/bibek-panda-a8ba66174/';
-  static const _github = 'https://github.com/bibekpanda55/';
+  static const _linkedIn = 'https://www.linkedin.com/in/bibek-panda-a8ba66174/';
+  static const _github = 'https://github.com/bibekpanda55/pice_app_demo';
   static const _resume =
       'https://drive.google.com/file/d/1dW6BQ-PvCPLQE8MNUN5AbWdqr3rLpgyP/view?usp=sharing';
   static const _proposalPdf =
@@ -167,9 +166,9 @@ class _BuiltByFooter extends StatelessWidget {
           borderRadius: BorderRadius.circular(16),
           border: Border.all(color: PiceColors.divider),
         ),
-        child: Column(
+        child: const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: const [
+          children: [
             Text(
               'BUILT BY',
               style: TextStyle(
